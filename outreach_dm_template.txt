@@ -1,5 +1,0 @@
-
-Hey {Name}, I’m transitioning from EE into Junior Cyber / IT Support (BSc Cyber Security).
-I built a small Linux-hardening lab and documented it here: {repo_link}.
-If you had 5 mins, what’s one improvement that would read as day-one value to a hiring manager?
-Targeting Service Desk / Junior Analyst roles in London/remote. Happy to return the favour—thanks!
