@@ -24,6 +24,17 @@
 - No `/var/log/auth.log` at first → installed & enabled `rsyslog`.
 - Hostname changed for screenshots; older log rows show previous name (expected).
 
+### Fail2ban demo (controlled)
+- Temporary override lowered thresholds and disabled `ignoreself` to demonstrate a ban.
+- Evidence:
+  - `screenshots/fail2ban-status_banned.png` — **Currently banned: 1 (127.0.0.1)**, logpath `/var/log/auth.log`
+- Reverted afterwards:
+  - Removed demo file in `/etc/fail2ban/jail.d/99-sshd-demo.conf`, restarted fail2ban, unbanned `127.0.0.1`.
+
+
+
+
+
 **Reproduce (quick)**
 ```bash
 sudo apt update && sudo apt install -y openssh-server ufw fail2ban rsyslog git
