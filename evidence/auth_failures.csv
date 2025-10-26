@@ -1,0 +1,13 @@
+timestamp,host,process,src_ip,message
+2025-10-25T18:02:57.531426+01:00,Shitbox,gdm-password],d:a,pam_unix(gdm-password:auth): authentication failure; logname= uid=0 euid=0 tty=/dev/tty1 ruser= rhost=  user=timtoom
+2025-10-26T10:16:12.160761+00:00,Shitbox,gdm-password],d:a,pam_unix(gdm-password:auth): authentication failure; logname=timtoom uid=0 euid=0 tty=/dev/tty1 ruser= rhost=  user=timtoom
+2025-10-26T12:18:47.582439+00:00,Shitbox,sudo,:a,pam_unix(sudo:auth): authentication failure; logname=timtoom uid=1000 euid=0 tty=/dev/pts/0 ruser=timtoom rhost=  user=timtoom
+2025-10-26T12:22:06.492961+00:00,Shitbox,sshd-session[18087],::1,Invalid user invaliduser from ::1 port 49978
+2025-10-26T12:22:15.534334+00:00,Shitbox,sshd-session[18087],d:a,pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1
+2025-10-26T12:22:16.983576+00:00,Shitbox,sshd-session[18087],::1,Failed password for invalid user invaliduser from ::1 port 49978 ssh2
+2025-10-26T12:22:22.878405+00:00,Shitbox,sshd-session[18087],::1,Failed password for invalid user invaliduser from ::1 port 49978 ssh2
+2025-10-26T12:22:27.902621+00:00,Shitbox,sshd-session[18087],::1,PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1
+2025-10-26T12:23:37.480349+00:00,Shitbox,sshd-session[18107],127.0.0.1,Invalid user invaliduser from 127.0.0.1 port 52976
+2025-10-26T12:23:40.047412+00:00,Shitbox,sshd-session[18107],127.0.0.1,pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=127.0.0.1
+2025-10-26T12:23:42.387665+00:00,Shitbox,sshd-session[18107],127.0.0.1,Failed password for invalid user invaliduser from 127.0.0.1 port 52976 ssh2
+2025-10-26T12:23:44.195612+00:00,Shitbox,sshd-session[18107],127.0.0.1,Failed password for invalid user invaliduser from 127.0.0.1 port 52976 ssh2
