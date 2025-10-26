@@ -42,5 +42,3 @@ Add centralised logging (Wazuh or Splunk Free trial) and a short triage note.
 
 Script a one-command bootstrap (install.sh) to reproduce this setup.
 
-Commit message (use for your push)
-Home
