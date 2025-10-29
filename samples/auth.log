@@ -1,0 +1,2 @@
+2025-10-26T12:23:42.387665+00:00 localhost sshd-session[18107]: Failed password for invalid user invaliduser from 127.0.0.1 port 52976 ssh2
+Oct 26 12:23:44 localhost sshd[18107]: Invalid user test from ::1 port 49978

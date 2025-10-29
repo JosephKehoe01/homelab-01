@@ -1,0 +1,21 @@
+version: "3.9"
+services:
+  parser-host:
+    build: .
+    image: homelab-01-parser:latest
+    environment:
+      - LOG_DIR=/var/log
+      - OUT_PATH=/app/evidence/auth_failures.csv
+    volumes:
+      - /var/log:/var/log:ro
+      - ./evidence:/app/evidence
+
+  parser-sample:
+    build: .
+    image: homelab-01-parser:latest
+    environment:
+      - LOG_DIR=/app/samples
+      - OUT_PATH=/app/evidence/auth_failures.csv
+    volumes:
+      - ./samples:/app/samples:ro
+      - ./evidence:/app/evidence
