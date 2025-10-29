@@ -46,6 +46,18 @@ sudo systemctl restart ssh
 sudo ufw default deny incoming && sudo ufw default allow outgoing
 sudo ufw allow 22/tcp && sudo ufw enable
 # generate a couple of failures (optional, for evidence), then lock back down:
+
+Docker usage
+### Parse host auth logs (Linux)
+```bash
+docker build -t homelab-01-parser .
+docker run --rm \
+  -e LOG_DIR=/var/log \
+  -e OUT_PATH=/app/evidence/auth_failures.csv \
+  -v /var/log:/var/log:ro \
+  -v "$PWD/evidence":/app/evidence \
+  homelab-01-parser
+
 # sudo sed -i 's/^PasswordAuthentication no/PasswordAuthentication yes/' /etc/ssh/sshd_config && sudo systemctl restart ssh
 # ssh invaliduser@127.0.0.1 || true; ssh "$USER"@127.0.0.1 || true
 # sudo sed -i 's/^PasswordAuthentication yes/PasswordAuthentication no/' /etc/ssh/sshd_config && sudo systemctl restart ssh
